@@ -1,0 +1,12 @@
+baseURL: "https://cric.com.br/"
+
+DefaultContentLanguage: en
+languages:
+  en:
+    title: "CRIC"
+    weight: 1
+  pt:
+    title: "CRIC"
+    weight: 2
+
+theme: cric
