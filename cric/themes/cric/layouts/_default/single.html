@@ -1,7 +1,9 @@
 {{ define "main" }}
 <section id="main">
+	{{ with .Params.image }}
+	<img class="mx-auto d-block banner" src={{ absURL $.Params.image }} alt="Cells">
+	{{ end }}
   <h1 id="title">{{ .Title }}</h1>
-  <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
   <div>
         <article id="content">
            {{ .Content }}
